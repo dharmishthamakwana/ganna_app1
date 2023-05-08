@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
-
 import '../../../utils/songlist/songlist.dart';
 import '../provider/playlistProvider.dart';
 
@@ -77,8 +76,10 @@ class _PlaylistscreenState extends State<Playlistscreen> {
               child: Container(
                 height: 250,
                 child: ListView.builder(
-                  itemBuilder: (context, index) => playListBox(LoveSongImg[index],
-                      LoveSongName[index], LoveSongArtistName[index]),
+                  itemBuilder: (context, index) => playListBox(
+                      LoveSongImg[index],
+                      LoveSongName[index],
+                      LoveSongArtistName[index]),
                   itemCount: 5,
                   shrinkWrap: true,
                   scrollDirection: Axis.vertical,
